@@ -3,3 +3,9 @@
 /1.test/*.mpf
 /1.test/*.wlf
 *.vhd.bak
+
+work
+*.vhd.bak
+*.mpf
+*.wlf
+*.vhd.bak
