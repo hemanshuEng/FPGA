@@ -14,3 +14,10 @@ work
 /2.ORgate/*.mpf
 /2.ORgate/*.wlf
 *.vhd.bak
+
+/**/work
+/**/*.vhd.bak
+/**/*.mpf
+/**/*.wlf
+/**/*.vhd.bak
+/**/*.cr.mti
