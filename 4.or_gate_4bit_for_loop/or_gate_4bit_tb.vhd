@@ -10,7 +10,6 @@
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
-USE IEEE.numeric_std.all;
 
 entity or_gate_4bit_tb is
 end or_gate_4bit_tb;
@@ -35,26 +34,18 @@ begin
 		y  => result);
 process is
   begin
-
-	for sig1 in 0 to 2**r_sig1'length -1 loop
-		for sig2 in 0 to 2**r_sig2'length-1 loop
-		r_sig1 <= std_logic_vector(to_unsigned(sig1, r_sig1'length));
-		r_sig2 <= std_logic_vector(to_unsigned(sig2, r_sig2'length)); 
-		wait for 10 ns;
-		end loop;
-  	end loop;
---    r_sig1 <= "0000";
---    r_sig2 <= "0000";
---    wait for 10 ns;
---    r_sig1 <= "0000";
---    r_sig2 <= "0001";
---    wait for 10 ns;
---    r_sig1 <= "0011";
---    r_sig2 <= "1100";
---    wait for 10 ns;
---    r_sig1 <= "1000";
---    r_sig2 <= "0101";
---    wait for 10 ns;   
+    r_sig1 <= "0000";
+    r_sig2 <= "0000";
+    wait for 10 ns;
+    r_sig1 <= "0000";
+    r_sig2 <= "0001";
+    wait for 10 ns;
+    r_sig1 <= "0011";
+    r_sig2 <= "1100";
+    wait for 10 ns;
+    r_sig1 <= "1000";
+    r_sig2 <= "0101";
+    wait for 10 ns;    
   end process;
      
 end behave;
