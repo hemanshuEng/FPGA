@@ -1,5 +1,5 @@
-1.test
-work
-*.vhd.bak
-*.mpf
-*.wlf
+
+/1.test/work
+/1.test/*.vhd.bak
+/1.test/*.mpf
+/1.test/*.wlf
