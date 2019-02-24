@@ -9,3 +9,8 @@ work
 *.mpf
 *.wlf
 *.vhd.bak
+/2.ORgate/work
+/2.ORgate/*.vhd.bak
+/2.ORgate/*.mpf
+/2.ORgate/*.wlf
+*.vhd.bak
