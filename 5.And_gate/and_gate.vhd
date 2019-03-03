@@ -14,6 +14,7 @@ port(
     q:   out std_logic
 );
 end and_gate;
+
 architecture rtl of and_gate is
 
 begin
