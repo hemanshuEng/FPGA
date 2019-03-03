@@ -1,5 +1,5 @@
 --------------------------------------------------------
--- OR Gate 
+-- and Gate testbench
 --
 -- Author :Hemanshu
 -- Description:
