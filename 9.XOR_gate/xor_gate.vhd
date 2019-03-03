@@ -18,5 +18,5 @@ end xor_gate;
 architecture rtl of xor_gate is
 
 begin
-    q <= x xnor y;
+    q <= x xor y;
 end rtl ; -- rtl
