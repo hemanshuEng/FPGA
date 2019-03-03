@@ -19,6 +19,7 @@ end inverter_tb;
 architecture  behave of inverter_tb is
      signal sig1 :std_logic;
      signal result:std_logic;
+	
      component inverter is
         port(
         a : in std_logic;
@@ -33,6 +34,6 @@ architecture  behave of inverter_tb is
             wait for 10 ns;
             sig1<= '1';
             wait for 10 ns;
-            end process;
+        end process;
     end behave;
     
