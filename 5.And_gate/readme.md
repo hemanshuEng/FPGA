@@ -1,6 +1,5 @@
-#And gate  
-----------
-
+# And gate  
+---------- 
 
 wave
-![wave](wave.png)
+![wave](wave.png) 
