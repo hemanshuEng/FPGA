@@ -10,7 +10,21 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-----------------------------------------------------------
+library ieee ;
+    use ieee.std_logic_1164.all ;
+    use ieee.numeric_std.all ;
+
+entity ent is
+  port (
+    clock
+  ) ;
+end ent ; 
+
+architecture arch of ent is
+
+begin
+
+end architecture ;---------------------------------------------------------
 entity mux41_tb is
 end mux41_tb;
 
@@ -47,3 +61,4 @@ begin
     end process ; -- test
 
 end behave ; -- behave
+---------------------------------------------------------------
