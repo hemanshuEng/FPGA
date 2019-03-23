@@ -1,35 +1,34 @@
 --------------------------------------------------------
--- 7segment 
+-- 7 segment top level entity 
 --
 -- Author :Hemanshu
--- Description: top level entity
--- Date:17-03-2019
+-- Description: 7 segment display using multiplexing
+-- Date:23-03-2019
 ---------------------------------------------------------
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
 ----------------------------------------------------------
-entity hex7seg_top is
+entity seg7mux_top is
 port (
     sw: in STD_LOGIC_VECTOR(3 downto 0);
     atog: out STD_LOGIC_VECTOR(6 downto 0);
     en: out STD_LOGIC_VECTOR(3 downto 0);
     h:out STD_LOGIC
   ) ;
-end hex7seg_top;
+end seg7mux_top;
 ------------------------------------------------------------
 
-architecture rtl  of hex7seg_top is
-    component hex7seg is
+architecture rtl of seg7mux_top is
+    component  seg7mux is
         port (
-            data: in STD_LOGIC_VECTOR(3 downto 0); 
-            seg: out STD_LOGIC_VECTOR(6 downto 0)
+            sw: in  STD_LOGIC_VECTOR(3 downto 0);
+            seg: out STD_LOGIC_VECTOR(6 downto 0);
+            en : out STD_LOGIC_VECTOR(3 downto 0);
+            dp : out STD_LOGIC
           ) ;
-        end component hex7seg;
+    end component seg7mux ;
 begin
-    en <="0000"; -- PNP trasistor used in board so 0 means on
-    h <='1';
-    seg:hex7seg port map(sw,atog);
-   
-end rtl ; -- 
+    seg7mux_inst:seg7mux_top port map(sw,atog,en,h); 
+end rtl ; --rtl 
