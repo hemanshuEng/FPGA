@@ -21,3 +21,4 @@ work
 /**/*.wlf
 /**/*.vhd.bak
 /**/*.cr.mti
+/**/*.vstf
